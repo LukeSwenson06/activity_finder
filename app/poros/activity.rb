@@ -1,4 +1,9 @@
-class Search
+class Activity
+    attr_reader :accessibility,
+                :activity,
+                :participants,
+                :price,
+                :type
     def initialize(data)
         @activity = data[:activity]
         @type = data[:type]

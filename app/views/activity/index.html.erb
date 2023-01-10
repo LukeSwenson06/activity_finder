@@ -1,0 +1,9 @@
+<p><h3>Activity:</h3> <%= @activity.activity %></p>
+<p><h3>Number of Participants:</h3> <%= @activity.participants %></p>
+<% if @activity.price <= 0.33 %>
+    <b>Price:</b> $
+<% elsif @activity.price <= 0.67 && @activity.price >= 0.34  %>
+    <b>Price:</b> $$
+<% else %>
+    <b>Price:</b> $$$
+<% end %>
