@@ -1,11 +1,11 @@
 class Activity
     attr_reader :accessibility,
-                :activity,
+                :description,
                 :participants,
                 :price,
                 :type
     def initialize(data)
-        @activity = data[:activity]
+        @description = data[:activity]
         @type = data[:type]
         @participants = data[:participants]
         @price = data[:price]
